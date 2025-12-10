@@ -1,9 +1,13 @@
 key = input("Enter answer key (space separated): ").split()
-students = [
-    ["John", ['A', 'B', 'B', 'C', 'D']],
-    ["Jane", ['A', 'A', 'A', 'A', 'A']],
-    ["Bob",  ['B', 'A', 'D', 'D', 'C']]
-]
+n = int(input("Enter number of students: "))
+
+students = []
+
+for _ in range(n):
+    name = input("Enter student name: ")
+    answers = input(f"Enter answers of {name} (space separated): ").split()
+    students.append([name, answers])
+
 for student in students:
     name = student[0]
     answers = student[1]
