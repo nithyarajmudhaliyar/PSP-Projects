@@ -17,4 +17,4 @@ for student in students:
     for i in range(len(key)):
         if answers[i] == key[i]:
             score += 1
-    print(f'{name}:{score}/{len(key)}')
+    print(f'{name}:{score}/{len(key)}, {name} got {{score}/{len(key)}}')
