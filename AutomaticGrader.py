@@ -1,5 +1,4 @@
-key = list(map(str, input().split()))
-
+key = input("Enter answer key (space separated): ").split()
 students = [
     ["John", ['A', 'B', 'B', 'C', 'D']],
     ["Jane", ['A', 'A', 'A', 'A', 'A']],
